@@ -1,0 +1,22 @@
+<h2>Consultant Reward Nomination</h2>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Profile</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let consultant of consultants">
+    <td>{{ consultant.username }}</td>
+    <td>{{ consultant.phone }}</td>
+    <td>{{ consultant.email }}</td>
+    <td>{{ consultant.profile }}</td>
+    <td>
+      <button (click)="nominateForReward(consultant)">
+        Nominate for Reward
+      </button>
+    </td>
+  </tr>
+</table>

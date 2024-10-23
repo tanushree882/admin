@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Delete Consultant</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="deleteConsultant(form)" #form="ngForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Consultant ID to Delete:</mat-label>
+        <input matInput type="text" [(ngModel)]="consultantId" name="consultantId" required />
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="warn" type="submit">Delete</button>
+    </form>
+  </mat-card-content>
+</mat-card>

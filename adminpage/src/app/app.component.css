@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least full height of the viewport */
+  }
+  
+  .mat-toolbar {
+    background-color: cornflowerblue;
+    color: white;
+  }
+  
+  .mat-button {
+    color: white;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-button {
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-button:hover {
+    background-color: #337ab7;
+  }
+  
+  .nav-button:active {
+    background-color: #23527c;
+  }
+  
+  .nav-button:focus {
+    box-shadow: 0 0 5px #337ab7;
+  }
+  
+  /* Styles for the Nominate Button */
+  .nominate-container {
+    margin: 40px 0; /* Adds space above and below the button */
+    text-align: center; /* Centers the button */
+  }
+  
+  .nominate-button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nominate-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .nominate-button:active {
+    background-color: #1e7e34; /* Even darker on click */
+  }
+  
+  .nominate-button:focus {
+    box-shadow: 0 0 5px #28a745; /* Green shadow on focus */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for spacing */
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%; /* Full width */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+    color: #6c757d; /* Gray text color */
+  }
