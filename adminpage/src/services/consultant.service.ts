@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { NgFor } from '@angular/common';
+
+
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConsultantService {
-  private consultants = [
+  public consultants = [
     { id: 1, username: 'JohnDoe', phone: '1234567890', email: 'john@example.com', profile: 'Tax Expert' },
     { id: 2, username: 'JaneSmith', phone: '9876543210', email: 'jane@example.com', profile: 'Financial Consultant' }
   ];

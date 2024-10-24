@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ConsultantService } from '../../services/consultant.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-reward',
   templateUrl: './rewards.component.html',
-  styleUrls: ['./rewards.component.css']
+  styleUrls: ['./rewards.component.css'],
+  standalone:true,
+  imports:[NgFor]
 })
 export class RewardComponent implements OnInit {
   consultants: any[] = [];

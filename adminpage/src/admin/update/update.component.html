@@ -1,1 +1,31 @@
-<p>update works!</p>
+<div class="update-container">
+    <h2>Update Consultant</h2>
+    <form #updateForm="ngForm" (ngSubmit)="updateConsultant(updateForm)">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" [(ngModel)]="consultant.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" [(ngModel)]="consultant.username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" [(ngModel)]="consultant.phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="consultant.email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="profile">Profile</label>
+            <textarea id="profile" name="profile" [(ngModel)]="consultant.profile" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Update Consultant</button>
+    </form>
+</div>

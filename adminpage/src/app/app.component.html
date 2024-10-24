@@ -8,7 +8,7 @@
 </mat-toolbar>
 
 <!-- New Nominate for Rewards Button -->
-<div class="nominate-container">
+<div class="nominate-container" *ngIf="isHomePage()">
   <button mat-button routerLink="/rewards" class="nominate-button">Nominate for Rewards</button>
 </div>
 

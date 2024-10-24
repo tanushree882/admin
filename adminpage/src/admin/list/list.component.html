@@ -1,21 +1,25 @@
 <h2>Consultants List</h2>
 <table>
   <tr>
+    <th>ID</th>
     <th>Username</th>
     <th>Phone</th>
     <th>Email</th>
     <th>Profile</th>
     <th>Actions</th>
   </tr>
-  <tr *ngFor="let consultant of consultants">
+  <!-- <h2>hellooooooo</h2> -->
+  <tr *ngFor="let consultant of restUserData.consultants">
+    <td>{{ consultant.id }}</td>
     <td>{{ consultant.username }}</td>
     <td>{{ consultant.phone }}</td>
     <td>{{ consultant.email }}</td>
     <td>{{ consultant.profile }}</td>
-    <td>
-      <button (click)="deleteConsultant(consultant.id)">Delete</button>
-      <!--<button [routerLink]="['/Update', consultant.id]">Update</button>
-      <button (click)="nominateForReward(consultant)">Nominate for Reward</button>-->
-    </td>
+    <td><button (click)="navigateToUpdatePage(consultant.id)">Update</button></td>
+    
+
+    
   </tr>
 </table>
+<!-- <button (click)="getConsultants()"></button> -->
+<!-- <button (click)="navigateToUpdatePage(consultant.id)">Update<button></button> -->
