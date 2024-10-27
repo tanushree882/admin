@@ -1,12 +1,12 @@
 <h2>Consultants List</h2>
 <table>
   <tr>
-    <th>ID</th>
+    <!-- <th>ID</th>
     <th>Username</th>
     <th>Phone</th>
-    <th>Email</th>
+    <th>Email</th> -->
     <th>Profile</th>
-    <th>Actions</th>
+    <!-- <th>Actions</th> -->
   </tr>
   <!-- <h2>hellooooooo</h2> -->
   <tr *ngFor="let consultant of restUserData.consultants">
@@ -15,7 +15,8 @@
     <td>{{ consultant.phone }}</td>
     <td>{{ consultant.email }}</td>
     <td>{{ consultant.profile }}</td>
-    <td><button (click)="navigateToUpdatePage(consultant.id)">Update</button></td>
+    <!-- <td><button (click)="navigateToUpdatePage(consultant.id)">Update</button></td> -->
+    <td><button mat-button [routerLink]="['/update', consultant.id]" class="nav-button">Update</button></td>
     
 
     

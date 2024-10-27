@@ -11,8 +11,12 @@ import { NgFor } from '@angular/common';
 })
 export class ConsultantService {
   public consultants = [
-    { id: 1, username: 'JohnDoe', phone: '1234567890', email: 'john@example.com', profile: 'Tax Expert' },
-    { id: 2, username: 'JaneSmith', phone: '9876543210', email: 'jane@example.com', profile: 'Financial Consultant' }
+    { id: 1, username: 'JohnDoe', phone: '1234567890', email: 'john@example.com', profile: 'Tax Expert' ,rating:'5',No_of_projects:'5'},
+    { id: 2, username: 'JaneSmith', phone: '9876543210', email: 'jane@example.com', profile: 'Business Consultant',rating:'4',No_of_projects:'4' },
+    { id: 3, username: 'Shubh', phone: '9876543210', email: 'jane@example.com', profile: 'HR Consultant',rating:'3',No_of_projects:'3' },
+    { id: 4, username: 'Ram', phone: '9876543210', email: 'jane@example.com', profile: 'Advisory Consultant',rating:'5',No_of_projects:'6' },
+    { id: 5, username: 'Raju', phone: '9876543210', email: 'jane@example.com', profile: 'Consultant',rating:'2',No_of_projects:'4' },
+    { id: 6, username: 'Ravi', phone: '9876543210', email: 'jane@example.com', profile: 'Consultant2',rating:'1',No_of_projects:'10' }
   ];
 
   constructor() { }

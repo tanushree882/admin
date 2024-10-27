@@ -1,0 +1,129 @@
+@keyframes backgroundChange {
+    0% { background-color: #003DA5; } /* KPMG blue */
+    25% { background-color: #4B0082; } /* Indigo */
+    50% { background-color: #8A2BE2; } /* Violet */
+    75% { background-color: #E6E6FA; } /* Lavender */
+    100% { background-color: #003DA5; } /* KPMG blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes full viewport height */
+    animation: backgroundChange 10s infinite alternate; /* Apply animation to body */
+}
+
+.container {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 50px auto; /* Center the form horizontally and add margin from top */
+    padding: 20px;
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: #003DA5; /* KPMG blue */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Labels on new lines */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input:focus, textarea:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+.submit-button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #007BFF; /* Blue button background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Button text size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4faff;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF; /* Blue color */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

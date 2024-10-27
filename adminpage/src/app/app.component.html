@@ -7,6 +7,10 @@
   <button mat-button routerLink="/delete" class="nav-button">Delete Consultant</button>
 </mat-toolbar>
 
+<div *ngIf="isHomePage()">
+  <canvas id="myChart"></canvas>
+</div>
+
 <!-- New Nominate for Rewards Button -->
 <div class="nominate-container" *ngIf="isHomePage()">
   <button mat-button routerLink="/rewards" class="nominate-button">Nominate for Rewards</button>

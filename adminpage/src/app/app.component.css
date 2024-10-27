@@ -59,6 +59,11 @@ body {
   .nominate-button:focus {
     box-shadow: 0 0 5px #28a745; /* Green shadow on focus */
   }
+
+  canvas {
+    max-width: 600px;
+    margin: 20px auto;
+  }
   
   /* Footer Styles */
   .footer {
